@@ -69,7 +69,7 @@
 .navPages {
     background-color: $navPages-backgroundColor;
     height: 100%;
-    overflow-y: auto;
+    // overflow-y: auto;
     padding: spacing("single");
 
     @include breakpoint("medium") {

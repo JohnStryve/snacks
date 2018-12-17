@@ -8,8 +8,20 @@
 			<div class="column ink-logo is-2">
 				<div class="lg-contain">
 					{{!-- {{cdn 'img/logo_wht.svg'}} --}}
-					<img src="https://image.spreadshirtmedia.com/image-server/v1/mp/designs/1016489534,width=178,height=178/south-african-american-flag-south-africa-and-usa-design.png">
+					<img src="https://image.flaticon.com/icons/png/512/197/197562.png">
 				</div>
+
+
+				{{!-- {{#if theme_settings.social_icon_placement_bottom '!==' 'bottom_none'}} --}}
+				<article class="footer-info-col tac
+								footer-info-col--social
+								footer-info-col--{{#if theme_settings.social_icon_placement_bottom '===' 'bottom_left'}}left{{else}}right{{/if}}"
+				data-section-type="footer-webPages">
+					{{> components/common/social-links}}
+				</article>
+				{{!-- {{/if}} --}}
+
+
 			</div><div class="column is-1"></div>
 
 
@@ -86,11 +98,14 @@
 	            <p class="powered-by">
 	            	<span><a href="https://www.instagram.com/Braaitime" target="_blank">#BraaiTime</a> | </span>
 	            	<span>&copy; {{moment format="YYYY"}} {{settings.store_name}} | </span>
-	            	<span>Made in South Africa &#9825 |</span>
-	            	<span> <a href="mailto:Help@Braaitime.com" target="_blank">Help@Braaitime.com</a></span>
+	            	<span>Authentic South African Biltong &#9825 |</span>
+	            	<span> <a href="mailto:info@braaitime.com" target="_blank">info@braaitime.com</a></span>
 	            </p>
 	        </div>
 	    {{/if}}
 		<br>
 	</div>
 </footer>
+
+
+

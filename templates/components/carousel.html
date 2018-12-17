@@ -1,3 +1,4 @@
+ 
 <div class="pr car-container">
     <section class="heroCarousel slick-initialized1"
         data-slick='{
@@ -9,15 +10,19 @@
             "autoplaySpeed": {{carousel.swap_frequency}},
             "lazyLoad": "ondemand",
             "touchThreshold": 9,
-            "infinite": true
-        }'>
+            "infinite": true,
+            "fade": true,
+            "cssEase": "linear"
+        }'
+        style="background: #151329;">
+       
         {{#each carousel.slides}}
-        <a href="{{url}}">
+<a href="{{url}}" class="{{#if url '===' 'http://void'}}disable{{/if}} *{{url}}*">
             <div 
                 class="heroCarousel-slide"
                 {{#if heading}}
                     style="
-                        background: url({{heading}}) fixed !important;
+                        background: url({{image}}) fixed !important;
                         background-size: cover !important;
                     "
                 {{/if}}
@@ -30,6 +35,7 @@
                     src="{{image}}"
                     alt="{{alt_text}}"
                     title="{{alt_text}}"
+                    style="opacity: 0;" 
                     {{#if image_width}}
                         width="{{image_width}}"
                     {{/if}}
@@ -40,7 +46,7 @@
 
 
                 {{#if heading}}
-                    {{!-- {{> components/carousel-content bg=image show_background=true}} --}}
+                    {{> components/carousel-content bg=image show_background=true}}
                 {{else}}
                     {{#if text}}
                         {{> components/carousel-content show_background=true}}

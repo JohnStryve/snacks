@@ -9,6 +9,13 @@
   width: 0;
 }
 
+.level-edge {
+  max-width: 1%;
+  @include bp(L-phone) {
+        max-width: inherit;
+  }
+}
+
 .column.is-15, .column.is-15-tablet{
   flex: none;
   width: 9.66667%;
@@ -63,6 +70,7 @@ $b_deg: 120deg;
 .dib{
   display: inline-block !important;
 }
+.ps {position: static !important;}
 .db{display: block;}
 .p0{padding: 0 !important;}
 .m0{margin: 0 !important;}

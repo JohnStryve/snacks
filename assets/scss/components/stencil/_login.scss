@@ -33,12 +33,15 @@
 
 .new-customer-intro {
     margin-bottom: 0;
+    font-weight: bold;
 }
 
 .new-customer-fact-list {
-    margin-left: spacing("double");
+    margin-left: 0;
 }
 
 .new-customer-fact {
-    padding-left: spacing("half");
+    padding: 0;
+    margin: 0.5em 0;
+    border-bottom: 1px solid #ccc;
 }

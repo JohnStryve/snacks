@@ -6,7 +6,22 @@ import 'jquery-migrate';
 import Global from './theme/global';
 
 
-
+ // polyfill for formData.entries
+// if (window.navigator.userAgent.indexOf("Edge") > -1) {
+    
+//     formdata.entries = function( obj ){
+//         console.info('=====polyfill for Object.entries=====')
+//         var ownProps = Object.keys( obj ),
+//             i = ownProps.length,
+//             resArray = new Array(i); // preallocate the Array
+//         while (i--)
+//           resArray[i] = [ownProps[i], obj[ownProps[i]]];
+        
+//         return resArray;
+//     };
+// }else {
+//     console.log('======no need for polyfill======');
+// }
 
 
 
@@ -84,10 +99,10 @@ window.stencilBootstrap = function stencilBootstrap(pageType, contextJSON = null
                 
                 // Finds the appropriate class from the pageType.
                 const pageClassImporter = pageClasses[pageType];
-                console.log({
-                    'context':context,
-                    'pageType':pageType,
-                })
+                // console.log({
+                //     'context':context,
+                //     'pageType':pageType,
+                // });
                 if (typeof pageClassImporter === 'function') {
                     PageClass = (await pageClassImporter()).default;
                 }

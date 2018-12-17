@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,600,700|Bowlby+One+SC');
 
 @mixin newFont($fontName) {
 	@font-face {
@@ -15,12 +16,18 @@
 //================ ChronicleDisplay-Bold ================//
 @include newFont(ChronicleDisplay-Bold);
 
-
+.bowlby {
+	font-family: 'Bowlby One SC', cursive !important;
+}
+.barlow {
+	font-family: 'Barlow', sans-serif !important;
+	transform:scale(0.95,1);
+}
 
 
 
 .opens{
-	font-family: 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-family: 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif !important;
 }
 
 

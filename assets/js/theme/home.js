@@ -7,15 +7,16 @@ import {IsAdmin} from './common/isadmin';
 export default class Home extends PageManager {
 	loaded(next) {
 		$('body').removeClass('inside');
-		this.getHomeData();
-		this.pressCar();
-		this.admin();
+		// this.getHomeData();
+		// this.pressCar();
+		// this.admin();
+		this.scrolled();
 		next();
 	}
 	admin() {
 		const self = this;
 		IsAdmin.check(function(authorized) {
-			console.info('admin: ', authorized);
+			// console.info('admin: ', authorized);
 			if(authorized) {
 				self.createDropzones();
 				self.rightClick();
@@ -27,6 +28,24 @@ export default class Home extends PageManager {
 	
 
 
+	scrolled() {
+		$(window).scroll(function() {
+		    var y_scroll_pos = window.pageYOffset;
+		    var topBarHeight = $('header').height();
+		    var scroll_pos_test = topBarHeight;
+		    var promoHeight = '-'+$('.above-nav-info').outerHeight()+'px';
+		    // var promoHeight = "32px";
+
+		    if(y_scroll_pos > scroll_pos_test) {
+				$('.above-nav-info').css('margin-top', promoHeight);
+				$("body").addClass('scrolled');
+		    }
+		    else {
+				$('.above-nav-info').css('margin-top', 0+'px');
+				$("body").removeClass('scrolled');
+		    }
+		});
+	}
 
 
 
@@ -54,7 +73,7 @@ export default class Home extends PageManager {
 		fb.subscribe('quotes').on('value', function(snapshot) {
 			pressCar.html('');
             press_data = snapshot.val();
-            console.log(press_data);
+            // console.log(press_data);
             $.each(press_data, function(i, entry){
             	// console.log(entry);
             	let markup = `<div class="logo column is-3" data-ref="${entry.href}" data-id="${entry.id}" data-quote="${entry.quote}"> <img class="logo-img" src="${entry.img}"> </div>`;

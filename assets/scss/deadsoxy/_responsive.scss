@@ -47,7 +47,8 @@ $media-queries: true;
     // tablet
     $bp-XL-tablet: 1124px;
     $bp-L-tablet: 1024px;
-    $bp-M-tablet: 768px;
+    // $bp-M-tablet: 768px;
+    $bp-M-tablet: 800px;
 
     @if $point == XL-tablet {
       @media (max-width: #{$bp-XL-tablet}){
