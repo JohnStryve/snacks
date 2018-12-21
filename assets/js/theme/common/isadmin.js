@@ -19,13 +19,7 @@ export const IsAdmin = {
     },
     update: function() {
         let update = [
-            'contactomarnow@gmail.com',
-            'j.simmons@deadsoxy.com',
-            'Jason@deadsoxy.com',
-            'jason@deadsoxy.com',
-            'aaronjayadams@gmail.com',
-            'blake@blakehammerton.com',
-            'thesharpgentleman@gmail.com'
+            'contactomarnow@gmail.com'
         ];
         fb.write('admins', update);
     }

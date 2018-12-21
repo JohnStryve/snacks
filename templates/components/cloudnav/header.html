@@ -19,7 +19,7 @@
     <!-- register msg -->
     {{#if customer.email}}{{else}}
     <div class="inner closing" data-cookie="register-msg">
-        <p class="f"><a href="{{urls.auth.create_account}}">Register an account</a> to receive a 10% off <i
+        <p class="f"><a href="{{urls.auth.create_account}}">Register an account</a> to receive 10% off <i
         class="fas fa-info-circle"></i></p>
         <div class="more">Find Coupon Code In Confirmation Email</div>
         <div class="close"> <i class="fa fa-times"></i> </div>
@@ -44,7 +44,7 @@
         <div class="container">
             <div class="level is-mobile">
                 <div class="level-left">
-                    {{> components/deadsoxy/account-links}}
+                    {{> components/cloudnav/account-links}}
                 </div>
                 <div class="level-right">
                     <div class="it">Call for Monthly Subscriptions <a href="tel:18773799677">1-877-DRY WORS(379 9677)</a></div>
@@ -63,12 +63,12 @@
                 </div>
             </div>
             <div class="level-item main-nav" data-menu>
-                {{> components/deadsoxy/navigation}}
+                {{> components/cloudnav/navigation}}
             </div>
             <div class="level-right account-menu level-edge">
                 <div class="level-item">
                     {{!-- {{> components/common/navigation}} --}}
-                    {{> components/deadsoxy/account-menu}}
+                    {{> components/cloudnav/account-menu}}
                 </div>
             </div>
         </div>

@@ -54,7 +54,7 @@
                     {{!-- {{lang 'products.price_now'}} --}}
                 {{/if}}
             </span>
-            <span data-product-price-without-tax class="price price--withoutTax"> {{price.without_tax.formatted}}</span>
+            <span data-product-price-without-tax class="price price--withoutTax1"> {{price.without_tax.formatted}}</span>
             {{#if schema_org}}
                 <meta itemprop="availability" itemtype="http://schema.org/ItemAvailability"
                     content="http://schema.org/{{#if product.pre_order}}PreOrder{{else if product.out_of_stock}}OutOfStock{{else if product.can_purchase '===' false}}OutOfStock{{else}}InStock{{/if}}">

@@ -1,7 +1,7 @@
 import PageManager from './page-manager';
 import $ from 'jquery';
 import Dropzone from 'dropzone';
-import {fb} from './common/firebase';
+// import {fb} from './common/firebase';
 import {IsAdmin} from './common/isadmin';
 
 export default class Home extends PageManager {

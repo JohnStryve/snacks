@@ -2,7 +2,7 @@ import $ from 'jquery';
 import 'foundation-sites/js/foundation/foundation';
 import 'foundation-sites/js/foundation/foundation.dropdown';
 import utils from '@bigcommerce/stencil-utils';
-import addtocart_deadsoxy from './addtocart-deadsoxy'
+import addtocart_cloudnav from './addtocart-cloudnav'
 
 export const CartPreviewEvents = {
     close: 'closed.fndtn.dropdown',
@@ -15,7 +15,7 @@ export default function () {
     const $cartDropdown = $('[data-dropdown-content]');
     const $cartLoading = $('<div class="loadingOverlay"></div>');
     const options = {
-        template: 'deadsoxy/cart-preview',
+        template: 'cloudnav/cart-preview',
         config: {
             products: {
                 featured: {
@@ -56,7 +56,7 @@ export default function () {
             $cartLoading
                 .hide();
             bindEvents();
-            addtocart_deadsoxy(true);
+            addtocart_cloudnav(true);
 
             if(skipQty) { return; }
 

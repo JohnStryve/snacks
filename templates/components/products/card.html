@@ -62,7 +62,7 @@
                             <a href="{{pre_order_add_to_cart_url}}" class="button button--small card-figcaption-button">{{lang 'products.pre_order'}}</a>
                         {{/if}}
                         {{!-- {{#if add_to_cart_url }} --}}
-                            <div class="deadsoxy_addtocart_{{id}}"></div>
+                            <div class="cloudnav_addtocart_{{id}}"></div>
                             {{!-- <a href="{{add_to_cart_url}}" class="button button--small card-figcaption-button">{{lang 'products.add_to_cart'}}</a> --}}
                         {{!-- {{/if}} --}}
                         {{#if out_of_stock_message }}
@@ -77,7 +77,7 @@
     </figure>
     <div class="card-body {{#if grooms}}disable{{/if}}">
             <div class="bg-light">
-                {{> components/products/addtocart-deadsoxy}}
+                {{> components/products/addtocart-cloudnav}}
             </div>
         {{#if show_rating}}
             <p class="card-text" data-test-info-type="productRating">

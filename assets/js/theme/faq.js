@@ -15,8 +15,8 @@ import {IsAdmin} from './common/isadmin';
 export default class faq extends PageManager {
 
 	loaded(next) {
-		this.admin();
-		this.getFaqs();
+		// this.admin();
+		// this.getFaqs();
 		// this.addFaq('category2','qq2','aa2')
 		next();
 	}

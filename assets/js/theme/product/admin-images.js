@@ -6,16 +6,16 @@ const id = $("[dz]").attr('dz');
 
 export default function admin_images() {
 	// fb.write('images/test_sku/', {'hello': 'world'})
-	getImages( id );
-	IsAdmin.check(function(authorized) {
-		console.info('admin: ', authorized);
-		if(authorized) {
-			createDropzones();
-			$('.admin-add').removeClass('hide'); // reveal Plus
-			removeListen();
-		}
-	});
-	feature_overlay();
+	// getImages( id );
+	// IsAdmin.check(function(authorized) {
+	// 	console.info('admin: ', authorized);
+	// 	if(authorized) {
+	// 		createDropzones();
+	// 		$('.admin-add').removeClass('hide'); // reveal Plus
+	// 		removeListen();
+	// 	}
+	// });
+	// feature_overlay();
 }
 
 function createDropzones() {

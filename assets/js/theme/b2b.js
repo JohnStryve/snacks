@@ -10,7 +10,7 @@ export default class b2b extends PageManager {
 
 	loaded(next) {
 		console.log('b2b.js');
-		this.admin();
+		// this.admin();
 		next();
 	}
 

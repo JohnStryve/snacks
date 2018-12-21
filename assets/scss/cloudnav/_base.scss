@@ -408,6 +408,7 @@ body.scrolled {
 				padding: 1em;
 				z-index: 1;
 				@include grad(90deg, rgba($dark,0), $dark, cover);
+				// display: none;
 			}
 			&:before {
 				left: 0;
@@ -605,7 +606,10 @@ body.scrolled {
 		}
 	}
 	@include bp(L-phone) {
-	    min-height: 5em !important;
+		min-height: 5em !important;
+		h1 {
+			font-size: 1.4em !important;
+		}    /* height: 3em; */
 	}
 }
 
@@ -800,6 +804,7 @@ body.scrolled {
 					// background: $blue;
 				}
 			}
+			@include bp(L-phone) { width: 100% !important; }
 		}
 		a.button{
 			padding: 0;
@@ -1723,13 +1728,16 @@ section.home1 {
 		}
 		figure{
 			min-height: 15em;
-			@include bp(L-phone) {
+			@include bp(S-desktop) {
 				min-height: inherit !important;
 			}
 		}
 		figure a{
 			.card-img-container {
-			    height: 14em;
+				height: 14em;
+				@include bp(S-desktop) {
+					height: inherit !important;
+				}
 				img {
 				}
 				&:after {
@@ -1756,7 +1764,7 @@ section.home1 {
 			a {
 			}
 			.price {
-				height: 3em;
+				// height: 3em;
 			}
 		}
 		.card-figcaption-button {
@@ -1774,7 +1782,10 @@ section.home1 {
 		    	&:hover {
 		    		color: $yellow;
 		    	}
-		    }
+			}
+			@include bp(S-desktop) {
+				width: 90%;
+			}
 		}
 		&:hover{
 			// .card-text,.edit {display: block;}

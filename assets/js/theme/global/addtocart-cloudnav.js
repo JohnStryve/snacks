@@ -7,7 +7,7 @@ import utils from '@bigcommerce/stencil-utils';
 
 
 
-export default function addtocart_deadsoxy(quick) {
+export default function addtocart_cloudnav(quick) {
 
 
     // const $button = $('[data-cart-item-add-2]');
@@ -21,7 +21,7 @@ export default function addtocart_deadsoxy(quick) {
     $button.each( function() {
         const pId = $(this).data('submits');
         const $container = $(this).closest('article');
-        const $buttonHome = (quick) ? $(`.deadsoxy_quick_addtocart_${pId}`) : $(`.deadsoxy_addtocart_${pId}`, $container);
+        const $buttonHome = (quick) ? $(`.cloudnav_quick_addtocart_${pId}`) : $(`.cloudnav_addtocart_${pId}`, $container);
         if($buttonHome.length) {
             $buttonHome.append($(this));
             $(this).removeClass('hide');
@@ -124,15 +124,15 @@ export default function addtocart_deadsoxy(quick) {
                 console.error(errorMessage);
                 // Strip the HTML from the error message
                 const tmp = document.createElement('DIV');
-                const conflicting_options = $('[data-product-attribute]');
-                const conflicting_options_parent = $('[data-product-option-change]');
+                const conflicting_options = $('[data-product-option-change]');
+                const conflicting_options_parent = $('[data-cart-item-add]');
                 const conflicting_options_clone = conflicting_options.clone();
                 tmp.innerHTML = errorMessage;
 
                 // if the error is option related then launch options modal
                 if(errorMessage.includes('option')) {
                     return getOptions(productId, res => {
-                        // conflicting_options.remove();
+                        conflicting_options.remove();
                         setTimeout(e=>{
                             // maintain original qty
                             $('form.special').find('[name="qty[]"]').val(qty);
@@ -141,9 +141,11 @@ export default function addtocart_deadsoxy(quick) {
                             html: res,
                             type: 'info',
                             width: 340,
-                            confirmButtonText: "Add to Cart"
+                            confirmButtonText: "Add to Cart",
+                            onClose: () => {
+                                conflicting_options_parent.append(conflicting_options_clone);
+                            }
                         }).then( (e) => {
-                            // conflicting_options_parent.append(conflicting_options_clone);
                             return addProductToCart(e, $(`[pop-form]`)[0], (res)=>{
                             });
                         });
@@ -167,7 +169,7 @@ export default function addtocart_deadsoxy(quick) {
 
     function getOptions(productId, next) {
         console.log('getOptions: ', productId);
-        utils.api.product.getById(productId, { template: 'deadsoxy/products/options_modal' }, (err, response) => {
+        utils.api.product.getById(productId, { template: 'cloudnav/products/options_modal' }, (err, response) => {
            next(response);
         });
     }
@@ -240,7 +242,7 @@ export default function addtocart_deadsoxy(quick) {
     function getCartContent(cartItemHash, onComplete) {
         const options = {
             // template: 'cart/preview',
-            template: 'deadsoxy/confirmationPop',
+            template: 'cloudnav/confirmationPop',
             params: {
                 suggest: cartItemHash,
             },

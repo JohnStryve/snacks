@@ -1,12 +1,12 @@
 <div class="preview-bg"></div>
 
 <div class="upsell-column animated1 fadeInLeft">
-    {{> components/deadsoxy/cart-upsell}}
+    {{> components/cloudnav/cart-upsell}}
 </div>
 
 
 <div class="previewCart">
-    {{> components/deadsoxy/cart-meter}}
+    {{> components/cloudnav/cart-meter}}
     {{#if cart.items.length}}
         <ul class="previewCartList">
             <br>
@@ -77,7 +77,7 @@
             {{/each}}
         </ul>
         <div class="previewCartAction">
-            {{> components/deadsoxy/cart-mini-totals cart=cart}}
+            {{> components/cloudnav/cart-mini-totals cart=cart}}
             <div class="disclaim dark">See discounts on cart page</div>
             <div class="columns is-multiline">
                 {{#if cart.show_primary_checkout_button}}

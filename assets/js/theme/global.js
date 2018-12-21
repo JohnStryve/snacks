@@ -10,9 +10,9 @@ import foundation from './global/foundation';
 import quickView from './global/quick-view';
 import cartPreview from './global/cart-preview';
 import compareProducts from './global/compare-products';
-import addtocart_deadsoxy from './global/addtocart-deadsoxy';
+import addtocart_cloudnav from './global/addtocart-cloudnav';
 import brand_images from './global/brand_images';
-// import('./global/addtocart-deadsoxy')
+// import('./global/addtocart-cloudnav')
 import privacyCookieNotification from './global/cookieNotification';
 import maintenanceMode from './global/maintenanceMode';
 import carousel from './common/carousel';
@@ -39,7 +39,7 @@ export default class Global extends PageManager {
         quickView(this.context);
         cartPreview();
         compareProducts(this.context.urls);
-        addtocart_deadsoxy();
+        addtocart_cloudnav();
         carousel();
         menu();
         mobileMenuToggle();

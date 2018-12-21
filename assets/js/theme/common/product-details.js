@@ -7,7 +7,7 @@ import modalFactory from '../global/modal';
 import _ from 'lodash';
 import swal from 'sweetalert2';
 import Wishlist from '../wishlist';
-import addtocart_deadsoxy from '../global/addtocart-deadsoxy'
+import addtocart_cloudnav from '../global/addtocart-cloudnav'
 
 export default class ProductDetails {
     constructor($scope, context, productAttributesData = {}) {
@@ -71,7 +71,8 @@ export default class ProductDetails {
     getViewModel($scope) {
         return {
             $priceWithTax: $('[data-product-price-with-tax]', $scope),
-            $priceWithoutTax: $('[data-product-price-without-tax]', $scope),
+            // this was breaking the format
+            $priceWithoutTax: $('[_____data-product-price-without-tax_____]', $scope),
             rrpWithTax: {
                 $div: $('.rrp-price--withTax', $scope),
                 $span: $('[data-product-rrp-with-tax]', $scope),
@@ -285,7 +286,7 @@ export default class ProductDetails {
     }
 
     /**
-     * Get cart contents ==>Get this exactly from addtocart-deadsoxy.js<==
+     * Get cart contents ==>Get this exactly from addtocart-cloudnav.js<==
      *
      * @param {String} cartItemHash
      * @param {Function} onComplete
@@ -293,7 +294,7 @@ export default class ProductDetails {
     getCartContent(cartItemHash, onComplete) {
         const options = {
             // template: 'cart/preview',
-            template: 'deadsoxy/confirmationPop',
+            template: 'cloudnav/confirmationPop',
             params: {
                 suggest: cartItemHash,
             },

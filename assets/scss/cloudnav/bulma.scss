@@ -290,7 +290,7 @@ table th {
   font-size: 0.75rem !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .is-size-1-mobile {
     font-size: 3rem !important;
   }
@@ -314,7 +314,7 @@ table th {
   }
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 801px), print {
   .is-size-1-tablet {
     font-size: 3rem !important;
   }
@@ -438,19 +438,19 @@ table th {
   text-align: center !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .has-text-centered-mobile {
     text-align: center !important;
   }
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 801px), print {
   .has-text-centered-tablet {
     text-align: center !important;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1023px) {
+@media screen and (min-width: 801px) and (max-width: 1023px) {
   .has-text-centered-tablet-only {
     text-align: center !important;
   }
@@ -496,19 +496,19 @@ table th {
   text-align: justify !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .has-text-justified-mobile {
     text-align: justify !important;
   }
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 801px), print {
   .has-text-justified-tablet {
     text-align: justify !important;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1023px) {
+@media screen and (min-width: 801px) and (max-width: 1023px) {
   .has-text-justified-tablet-only {
     text-align: justify !important;
   }
@@ -554,19 +554,19 @@ table th {
   text-align: left !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .has-text-left-mobile {
     text-align: left !important;
   }
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 801px), print {
   .has-text-left-tablet {
     text-align: left !important;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1023px) {
+@media screen and (min-width: 801px) and (max-width: 1023px) {
   .has-text-left-tablet-only {
     text-align: left !important;
   }
@@ -612,19 +612,19 @@ table th {
   text-align: right !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .has-text-right-mobile {
     text-align: right !important;
   }
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 801px), print {
   .has-text-right-tablet {
     text-align: right !important;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1023px) {
+@media screen and (min-width: 801px) and (max-width: 1023px) {
   .has-text-right-tablet-only {
     text-align: right !important;
   }
@@ -818,19 +818,19 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   display: block !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .is-block-mobile {
     display: block !important;
   }
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 801px), print {
   .is-block-tablet {
     display: block !important;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1023px) {
+@media screen and (min-width: 801px) and (max-width: 1023px) {
   .is-block-tablet-only {
     display: block !important;
   }
@@ -878,7 +878,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   display: flex !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .is-flex-mobile {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -886,7 +886,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   }
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 801px), print {
   .is-flex-tablet {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -894,7 +894,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1023px) {
+@media screen and (min-width: 801px) and (max-width: 1023px) {
   .is-flex-tablet-only {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -954,19 +954,19 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   display: inline !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .is-inline-mobile {
     display: inline !important;
   }
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 801px), print {
   .is-inline-tablet {
     display: inline !important;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1023px) {
+@media screen and (min-width: 801px) and (max-width: 1023px) {
   .is-inline-tablet-only {
     display: inline !important;
   }
@@ -1012,19 +1012,19 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   display: inline-block !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .is-inline-block-mobile {
     display: inline-block !important;
   }
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 801px), print {
   .is-inline-block-tablet {
     display: inline-block !important;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1023px) {
+@media screen and (min-width: 801px) and (max-width: 1023px) {
   .is-inline-block-tablet-only {
     display: inline-block !important;
   }
@@ -1072,7 +1072,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   display: inline-flex !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .is-inline-flex-mobile {
     display: -webkit-inline-box !important;
     display: -ms-inline-flexbox !important;
@@ -1080,7 +1080,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   }
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 801px), print {
   .is-inline-flex-tablet {
     display: -webkit-inline-box !important;
     display: -ms-inline-flexbox !important;
@@ -1088,7 +1088,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1023px) {
+@media screen and (min-width: 801px) and (max-width: 1023px) {
   .is-inline-flex-tablet-only {
     display: -webkit-inline-box !important;
     display: -ms-inline-flexbox !important;
@@ -1148,19 +1148,19 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   display: none !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .is-hidden-mobile {
     display: none !important;
   }
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 801px), print {
   .is-hidden-tablet {
     display: none !important;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1023px) {
+@media screen and (min-width: 801px) and (max-width: 1023px) {
   .is-hidden-tablet-only {
     display: none !important;
   }
@@ -1206,19 +1206,19 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   visibility: hidden !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .is-invisible-mobile {
     visibility: hidden !important;
   }
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 801px), print {
   .is-invisible-tablet {
     visibility: hidden !important;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1023px) {
+@media screen and (min-width: 801px) and (max-width: 1023px) {
   .is-invisible-tablet-only {
     visibility: hidden !important;
   }
@@ -4173,7 +4173,7 @@ a.box:active {
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 801px), print {
   .field.is-horizontal {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4185,13 +4185,13 @@ a.box:active {
   font-size: inherit;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .field-label {
     margin-bottom: 0.5rem;
   }
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 801px), print {
   .field-label {
     -ms-flex-preferred-size: 0;
         flex-basis: 0;
@@ -4224,7 +4224,7 @@ a.box:active {
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 801px), print {
   .field-body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5769,7 +5769,7 @@ a.tag:hover {
           flex-grow: 1;
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 801px), print {
   .level {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5806,7 +5806,7 @@ a.tag:hover {
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .level-item:not(:last-child) {
     margin-bottom: 0.75rem;
   }
@@ -5830,7 +5830,7 @@ a.tag:hover {
           flex-grow: 1;
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 801px), print {
   .level-left .level-item:not(:last-child),
   .level-right .level-item:not(:last-child) {
     margin-right: 0.75rem;
@@ -5846,13 +5846,13 @@ a.tag:hover {
           justify-content: flex-start;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .level-left + .level-right {
     margin-top: 1.5rem;
   }
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 801px), print {
   .level-left {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5869,7 +5869,7 @@ a.tag:hover {
           justify-content: flex-end;
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 801px), print {
   .level-right {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6274,7 +6274,7 @@ a.tag:hover {
   width: 100%;
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 801px), print {
   .modal1-content,
   .modal1-card {
     margin: 0 auto;
@@ -7625,7 +7625,7 @@ a.nav1bar-link.is-active {
       flex-wrap: wrap;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .pagination {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -7647,7 +7647,7 @@ a.nav1bar-link.is-active {
   }
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 801px), print {
   .pagination-list {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -8308,7 +8308,7 @@ label.panel-block:hover {
   margin-left: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .column.is-narrow-mobile {
     -webkit-box-flex: 0;
         -ms-flex: none;
@@ -8511,7 +8511,7 @@ label.panel-block:hover {
   }
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 801px), print {
   .column.is-narrow, .column.is-narrow-tablet {
     -webkit-box-flex: 0;
         -ms-flex: none;
@@ -9582,7 +9582,7 @@ label.panel-block:hover {
           align-items: center;
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 801px), print {
   .columns:not(.is-desktop) {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -9695,7 +9695,7 @@ label.panel-block:hover {
   margin-bottom: 1.5rem !important;
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 801px), print {
   .tile:not(.is-child) {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -9871,7 +9871,7 @@ label.panel-block:hover {
   background-image: linear-gradient(141deg, #e6e6e6 0%, white 71%, white 100%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .hero.is-white.is-bold .nav1bar-menu {
     background-image: linear-gradient(141deg, #e6e6e6 0%, white 71%, white 100%);
   }
@@ -9949,7 +9949,7 @@ label.panel-block:hover {
   background-image: linear-gradient(141deg, black 0%, #0a0a0a 71%, #181616 100%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .hero.is-black.is-bold .nav1bar-menu {
     background-image: linear-gradient(141deg, black 0%, #0a0a0a 71%, #181616 100%);
   }
@@ -10027,7 +10027,7 @@ label.panel-block:hover {
   background-image: linear-gradient(141deg, #dfd8d9 0%, whitesmoke 71%, white 100%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .hero.is-light.is-bold .nav1bar-menu {
     background-image: linear-gradient(141deg, #dfd8d9 0%, whitesmoke 71%, white 100%);
   }
@@ -10105,7 +10105,7 @@ label.panel-block:hover {
   background-image: linear-gradient(141deg, #1f191a 0%, #363636 71%, #46403f 100%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .hero.is-dark.is-bold .nav1bar-menu {
     background-image: linear-gradient(141deg, #1f191a 0%, #363636 71%, #46403f 100%);
   }
@@ -10183,7 +10183,7 @@ label.panel-block:hover {
   background-image: linear-gradient(141deg, #009e6c 0%, #00d1b2 71%, #00e7eb 100%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .hero.is-primary.is-bold .nav1bar-menu {
     background-image: linear-gradient(141deg, #009e6c 0%, #00d1b2 71%, #00e7eb 100%);
   }
@@ -10261,7 +10261,7 @@ label.panel-block:hover {
   background-image: linear-gradient(141deg, #1577c6 0%, #3273dc 71%, #4366e5 100%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .hero.is-link.is-bold .nav1bar-menu {
     background-image: linear-gradient(141deg, #1577c6 0%, #3273dc 71%, #4366e5 100%);
   }
@@ -10339,7 +10339,7 @@ label.panel-block:hover {
   background-image: linear-gradient(141deg, #04a6d7 0%, #209cee 71%, #3287f5 100%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .hero.is-info.is-bold .nav1bar-menu {
     background-image: linear-gradient(141deg, #04a6d7 0%, #209cee 71%, #3287f5 100%);
   }
@@ -10417,7 +10417,7 @@ label.panel-block:hover {
   background-image: linear-gradient(141deg, #12af2f 0%, #23d160 71%, #2ce28a 100%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .hero.is-success.is-bold .nav1bar-menu {
     background-image: linear-gradient(141deg, #12af2f 0%, #23d160 71%, #2ce28a 100%);
   }
@@ -10495,7 +10495,7 @@ label.panel-block:hover {
   background-image: linear-gradient(141deg, #ffaf24 0%, #ffdd57 71%, #fffa70 100%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .hero.is-warning.is-bold .nav1bar-menu {
     background-image: linear-gradient(141deg, #ffaf24 0%, #ffdd57 71%, #fffa70 100%);
   }
@@ -10573,7 +10573,7 @@ label.panel-block:hover {
   background-image: linear-gradient(141deg, #ff0561 0%, #ff3860 71%, #ff5257 100%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .hero.is-danger.is-bold .nav1bar-menu {
     background-image: linear-gradient(141deg, #ff0561 0%, #ff3860 71%, #ff5257 100%);
   }
@@ -10584,14 +10584,14 @@ label.panel-block:hover {
   padding-top: 1.5rem;
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 801px), print {
   .hero.is-medium .hero-body {
     padding-bottom: 9rem;
     padding-top: 9rem;
   }
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 801px), print {
   .hero.is-large .hero-body {
     padding-bottom: 18rem;
     padding-top: 18rem;
@@ -10646,7 +10646,7 @@ label.panel-block:hover {
   opacity: 0.3;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .hero-video {
     display: none;
   }
@@ -10656,7 +10656,7 @@ label.panel-block:hover {
   margin-top: 1.5rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .hero-btns .btn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -10667,7 +10667,7 @@ label.panel-block:hover {
   }
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 801px), print {
   .hero-btns {
     display: -webkit-box;
     display: -ms-flexbox;
